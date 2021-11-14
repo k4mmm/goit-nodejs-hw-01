@@ -21,6 +21,9 @@ async function getContactById(contactId) {
   const contact = contacts.find(
     (contact) => contact.id === parseInt(contactId)
   );
+  if (!contact) {
+    return null;
+  }
   console.table(contact);
 }
 
