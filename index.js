@@ -8,8 +8,6 @@ const {
 
 const { Command } = require("commander");
 
-invokeAction(argv);
-
 const program = new Command();
 program
   .option("-a, --action <type>", "choose action")
